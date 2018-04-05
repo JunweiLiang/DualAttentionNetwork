@@ -1,6 +1,6 @@
 # Dual attention network
 
-This repository contains the code and models for this CVPR 2017 paper (image-to-text and text-to-image task):
+This repository contains the code (using Tensorflow) and models for this CVPR 2017 paper (image-to-text and text-to-image task):
 
 	Hyeonseob Nam, Jung-Woo Ha, and Jeonghee Kim. 
 	"Dual attention networks for multimodal reasoning and matching." 
