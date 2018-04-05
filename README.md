@@ -72,6 +72,8 @@ $ python prepro_flickr30k.py splits/ results_20130124.token prepro --noword2vec 
 
 I use a slightly different training schedule. Batch size 256, learning rate 0.1 and 0.5 dropout for the first 60 epochs and 0.8 dropout and learning rate 0.05 for the next epochs. Also I use Adadelta as optimizer. It will take up to 9GB GPU memory and train for about 50 hours with SSDs.
 
+(There are other options (--use_char, --concat, etc.) I haven't tried with hard negative mining yet.)
+
 ```
 $ python main.py prepro models dan --no_wordvec --word_emb_size 512 --num_hops 2 --word_count_thres 1 --sent_size_thres 200 --word_size_thres 20 --hidden_size 512 --keep_prob 0.5 --margin 100 --num_epochs 60 --save_period 1000 --batch_size 256 --clip_gradient_norm 0.1 --init_lr 0.1 --wd 0.0005 --featpath resnet-152/ --feat_dim 14,14,2048 --hn_num 32 --is_train
 ```
