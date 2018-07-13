@@ -79,7 +79,7 @@ $ python main.py prepro models dan --no_wordvec --word_emb_size 512 --num_hops 2
 ```
 
 4. Testing with the model
-You can download [my model](https://aladdin1.inf.cs.cmu.edu/shares/dan_model_04092018.tgz) and put it in models/00/dan/best/ to directly run it
+You can download [my model](https://aladdin1.inf.cs.cmu.edu/shares/dan_model_04092018.tgz) and put it in models/00/dan/best/ to directly run it. Also put shared.p in models/00/dan/
 ```
 $ python main.py prepro models dan --no_wordvec --word_emb_size 512 --num_hops 2 --word_count_thres 1 --sent_size_thres 200 --word_size_thres 20 --hidden_size 512 --keep_prob 0.5 --margin 100 --num_epochs 60 --save_period 1000 --batch_size 256 --clip_gradient_norm 0.1 --init_lr 0.1 --wd 0.0005 --featpath resnet-152/ --feat_dim 14,14,2048 --hn_num 32 --is_test --load_best
 ```
